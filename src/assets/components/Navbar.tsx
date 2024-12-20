@@ -22,10 +22,10 @@ const Navbar:FC = () => {
                   
                 </div>                            
                 <nav className="flex items-center text-primary gap-4 w-9/12 justify-end">
-                    <Button text="Login" className="w-fit border border-primary"/>
-                    <Link to="/Signup" className="p-2 text-sm px-6 rounded-t-xl rounded-br-xl w-fit border border-primary">sign Up</Link>
+                <Link to="/Login" className="p-2 text-sm px-6 rounded-t-xl rounded-br-xl w-fit border border-primary">login</Link>
+                <Link to="/Signup" className="p-2 text-sm px-6 rounded-t-xl rounded-br-xl w-fit border border-primary">sign Up</Link>
                    
-                    <Button text="Download App" className="w-fit border border-primary"/>
+                <Button text="Download App" className="w-fit border border-primary"/>
                 </nav>
                       
             </div>

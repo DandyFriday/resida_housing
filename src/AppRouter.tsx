@@ -12,6 +12,7 @@ const ContactPage = lazy(() => delayLoad(import("./pages/contact/page")))
 import logo from "./assets/images/Logo green.png"
 const AboutPage = lazy(() => delayLoad(import("./pages/about/page")))
 const SignupPage = lazy(() => delayLoad(import("./pages/signup/page")))
+const LoginPage = lazy(() => delayLoad(import("./pages/login/page")))
 
 
 
@@ -28,7 +29,8 @@ export const AppRouter = () => {
                         <Route path="/contact" element={<ContactPage />}/>
                         <Route path='/about' element={<AboutPage />} />
                         <Route path="/*" element={<PageNotFound />} />
-                        <Route path="/signup" element={<SignupPage />} />                       
+                        <Route path="/signup" element={<SignupPage />} />  
+                        <Route path="/login" element={<LoginPage />} />                      
                     </Routes>
                     <Footer />
                 </Suspense>

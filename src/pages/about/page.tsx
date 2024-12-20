@@ -11,18 +11,19 @@ import { FaBagShopping } from "react-icons/fa6"
 
 const AboutPage = () => {
   return (
-    <div className="py-28">
+    <div className="py-20">
       <div className="w-full h-[461px] flex justify-around space-x-6o py-4 px-[7rem]">
         {/* Left Div */}
-        <div className="w-[525px] text-primary h-auto flex-shrink-4 lg:w-7/12 relative">
+        <div className="w-[525px] text-primary py-16 h-auto flex-shrink-4 lg:w-7/12 relative">
           {/* Content for the left side */}
-          <h1>Who we are!</h1>            
+          <h1 className="text-3xl">Who we are!</h1>            
           <p className="text-1xl">Resida encompasses the innovative minds shaping the future of urban living. From visionary developers to meticulous designers, each member brings a unique blend of creativity and expertise to the table. Together, we're revolutionizing the way people experience and engage with their living spaces, crafting an app that seamlessly integrates convenience, comfort and community. Get ready to meet your new partners in progress, driving Resida to new heights of success and satisfaction."</p>
 
         
           <div className="absolute top-30 right-[16rem] lg:-left-10">
+            
             <ImageExtras 
-              iconBg={'bg-purple'} 
+              iconBg={'bg-purple'}  
               icon={<FaBagShopping className="text-lg"/>}
               topText={<p className="text-sm text-gray-400">Available apartments</p>}
               bottomText={<p className="font-bold">300K+</p>}
