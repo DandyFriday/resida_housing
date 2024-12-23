@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const LoginPage: React.FC = () => {
   const [name, setName] = useState('');
@@ -6,6 +7,8 @@ const LoginPage: React.FC = () => {
   const [password, setPassword] = useState('');  
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState<string | null>(null);
+
+  const navigate = useNavigate();
   
   const handleEmailLogin = (e: React.FormEvent) => {
     e.preventDefault();
@@ -16,6 +19,9 @@ const LoginPage: React.FC = () => {
 
     alert(`login with Email: ${email}`);
     setError(null);
+
+    navigate(`/house/3`);
+
   };
 
   return (

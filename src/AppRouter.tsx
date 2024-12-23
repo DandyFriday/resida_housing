@@ -13,9 +13,7 @@ import logo from "./assets/images/Logo green.png"
 const AboutPage = lazy(() => delayLoad(import("./pages/about/page")))
 const SignupPage = lazy(() => delayLoad(import("./pages/signup/page")))
 const LoginPage = lazy(() => delayLoad(import("./pages/login/page")))
-
-
-
+const HouseDetailsPage= lazy(() => delayLoad(import("./pages/house/page")))
 
 
 export const AppRouter = () => {  
@@ -30,7 +28,8 @@ export const AppRouter = () => {
                         <Route path='/about' element={<AboutPage />} />
                         <Route path="/*" element={<PageNotFound />} />
                         <Route path="/signup" element={<SignupPage />} />  
-                        <Route path="/login" element={<LoginPage />} />                      
+                        <Route path="/login" element={<LoginPage />} />
+                        <Route path="/house/:id" element={<HouseDetailsPage/>} />                                            
                     </Routes>
                     <Footer />
                 </Suspense>

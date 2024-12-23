@@ -1,5 +1,19 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import gbagada from "../../assets/images/gbagada.png"
+
+// import lillian from "../assets/images/lillian.png";
+import images from "../../assets/images/images.jpeg";
+// import horeb from "../assets/images/horeb.png";
+// import pearl from "../assets/images/pearl.jpeg";
+// import parlour from "../assets/images/parlour.jpeg";
+// import viTower from "../assets/images/vi_tower.jpeg";
+// import tower from "../assets/images/tower.jpg";
+// import naanchin from "../assets/images/naanchin.png";
+// import lekki from "../assets/images/lekki1.jpeg";
+// import towerDuplicate from "../assets/images/tower.jpeg";
+// import lekki2 from "../assets/images/lekki.png";
+// import agege from "../assets/images/agege.png";
 
 
 export const houses = [
@@ -10,7 +24,7 @@ export const houses = [
       type: "Apartment",
       topography: "Urban",
       price: "$1200/month",
-      image: "/images/oakwood-villa.jpg",
+      image: gbagada,
       description: "A cozy villa in the heart of Springfield, perfect for small families.",
     },
     {
@@ -20,7 +34,7 @@ export const houses = [
       type: "Bungalow",
       topography: "Hilly",
       price: "$1500/month",
-      image: "/images/hilltop-bungalow.jpg", 
+      image: "/images/lillian.png", 
       description: "A cozy villa in the heart of Springfield, perfect for small families.",     
 
     },
@@ -31,7 +45,7 @@ export const houses = [
       type: "Duplex",
       topography: "Flat",
       price: "$1000/month",
-      image: "/images/sunnyvale-duplex.jpg",
+      image:images,
       description: "A cozy villa in the heart of Springfield, perfect for small families.",
     },
     {
@@ -41,7 +55,7 @@ export const houses = [
       type: "Cottage",
       topography: "Rural",
       price: "$800/month",
-      image: "/images/meadow-retreat.jpg",
+      image: "/images/horeb.png",
       description: "A cozy villa in the heart of Springfield, perfect for small families.",
     },
     {
@@ -51,7 +65,7 @@ export const houses = [
       type: "Apartment",
       topography: "Urban",
       price: "$1300/month",
-      image: "/images/city-heights.jpg",
+      image: "/images/pearl.jpeg",
       description: "A cozy villa in the heart of Springfield, perfect for small families.",
     },
     {
@@ -61,7 +75,7 @@ export const houses = [
       type: "Townhouse",
       topography: "Waterside",
       price: "$1100/month",
-      image: "/images/lakeside-residence.jpg",
+      image: "/images/palour.jpeg",
       description: "A cozy villa in the heart of Springfield, perfect for small families.",
     },
     {
@@ -71,7 +85,7 @@ export const houses = [
       type: "Villa",
       topography: "Mountainous",
       price: "$1700/month",
-      image: "/images/pinecrest-villa.jpg",
+      image: "/images/vi_tower.jpeg",
       description: "A cozy villa in the heart of Springfield, perfect for small families.",
     },
     {
@@ -81,7 +95,7 @@ export const houses = [
       type: "Duplex",
       topography: "Flat",
       price: "$900/month",
-      image: "/images/suburban-haven.jpg",
+      image: "/images/tower.jpg",
       description: "A cozy villa in the heart of Springfield, perfect for small families.",
     },
     {
@@ -91,7 +105,7 @@ export const houses = [
       type: "Bungalow",
       topography: "Cliffside",
       price: "$1400/month",
-      image: "/images/cliffside-retreat.jpg",
+      image: "/images/naanchin.png",
       description: "A cozy villa in the heart of Springfield, perfect for small families.",
     },
     {
@@ -101,7 +115,7 @@ export const houses = [
       type: "Villa",
       topography: "Rural",
       price: "$1600/month",
-      image: "/images/garden-view.jpg",
+      image: "/images/lekki1.jpeg",
       description: "A cozy villa in the heart of Springfield, perfect for small families.",
     },
     {
@@ -111,7 +125,7 @@ export const houses = [
       type: "Loft",
       topography: "Urban",
       price: "$1800/month",
-      image: "/images/downtown-loft.jpg",
+      image: "/images/tower.jpeg",
       description: "A cozy villa in the heart of Springfield, perfect for small families.",
     },
     {
@@ -121,7 +135,7 @@ export const houses = [
       type: "Apartment",
       topography: "Coastal",
       price: "$950/month",
-      image: "/images/harbor-breeze.jpg",
+      image: "/images/pearl.jpeg",
       description: "A cozy villa in the heart of Springfield, perfect for small families.",
     },
     {
@@ -131,7 +145,7 @@ export const houses = [
       type: "Townhouse",
       topography: "Suburban",
       price: "$1200/month",
-      image: "/images/sunset-boulevard.jpg",
+      image: "/images/lekki.png",
       description: "A cozy villa in the heart of Springfield, perfect for small families.",
     },
     {
@@ -141,7 +155,7 @@ export const houses = [
       type: "Cabin",
       topography: "Waterside",
       price: "$700/month",
-      image: "/images/riverside-cabin.jpg",
+      image: "/images/horeb.png",
       description: "A cozy villa in the heart of Springfield, perfect for small families.",
     },
     {
@@ -151,7 +165,7 @@ export const houses = [
       type: "Penthouse",
       topography: "Urban",
       price: "$2500/month",
-      image: "/images/skyline-penthouse.jpg",
+      image: "/images/agege.png",
       description: "A cozy villa in the heart of Springfield, perfect for small families.",
     },
   ];
@@ -171,10 +185,10 @@ export const houses = [
     }
   
     return (
-      <div className="min-h-screen bg-gray-100 py-10 px-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
         <button
           onClick={() => navigate(-1)}
-          className="mb-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
+          className="mb-4 px-4 py2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
         >
           Back
         </button>
