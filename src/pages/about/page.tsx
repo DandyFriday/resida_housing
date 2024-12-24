@@ -16,7 +16,7 @@ const AboutPage = () => {
         {/* Left Div */}
         <div className="w-[525px] text-primary py-16 h-auto flex-shrink-4 lg:w-7/12 relative">
           {/* Content for the left side */}
-          <h1 className="text-3xl">Who we are!</h1>            
+          <h1 className="text-3xl font-bold">Who we are!</h1>            
           <p className="text-1xl">Resida encompasses the innovative minds shaping the future of urban living. From visionary developers to meticulous designers, each member brings a unique blend of creativity and expertise to the table. Together, we're revolutionizing the way people experience and engage with their living spaces, crafting an app that seamlessly integrates convenience, comfort and community. Get ready to meet your new partners in progress, driving Resida to new heights of success and satisfaction."</p>
 
         
@@ -45,7 +45,7 @@ const AboutPage = () => {
         </div>
         
         {/* Right Image Div */}
-        <div className="w-[470px] h-[431px] grid gap-2 px-36">
+        <div className="w-[570px] h-[431px] grid gap-2 px-36">
           
           <div className="w-[450px] h-[241.91px] rounded-[10px] bg-gray-200">
           <img src={Frame3} className="w-full h-full object-fill" alt="" />
@@ -53,7 +53,7 @@ const AboutPage = () => {
           
           {/* Bottom Images */}
           <div className="relative grid grid-cols-2">
-            <div className="w-[165.19px] h-[165.25px] bg-gray-300 rounded-[10px]  ">
+            <div className="w-[165.19px] h-[165.25px] bg-gray-300 rounded-[10px] ">
               <img src={Frame2} className="w-full h-full object-fill" alt="" />
             </div>
             <div className="w-[263.97px] h-[165.25px] bg-gray-400 absolute rounded-[10px] left-[189px]">

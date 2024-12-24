@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 const SignupPage: React.FC = () => {
   const [name, setName] = useState('');
@@ -7,6 +9,9 @@ const SignupPage: React.FC = () => {
   const [confirmPassword, setConfirmPassword] = useState('')
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState<string | null>(null);
+
+  
+    const navigate = useNavigate();
 
   const handleGoogleSignIn = () => {
     const googleUser = {
@@ -32,6 +37,8 @@ const SignupPage: React.FC = () => {
 
     alert(`Signed up with Email: ${email}`);
     setError(null);
+
+    navigate(`/login`);
   };
 
   return (
